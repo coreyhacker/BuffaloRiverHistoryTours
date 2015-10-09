@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F35CB90-1CFC-44EF-AA10-167A3050AF84}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BRHT</RootNamespace>
+    <AssemblyName>BRHT</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BRHT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BRHT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BRHT.Master.designer.vb">
+      <DependentUpon>BRHT.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BRHT.Master.vb">
+      <DependentUpon>BRHT.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Charters.aspx.designer.vb">
+      <DependentUpon>Charters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Charters.aspx.vb">
+      <DependentUpon>Charters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VBN.aspx.designer.vb">
+      <DependentUpon>VBN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VBN.aspx.vb">
+      <DependentUpon>VBN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gift.aspx.designer.vb">
+      <DependentUpon>Gift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gift.aspx.vb">
+      <DependentUpon>Gift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cruises.aspx.designer.vb">
+      <DependentUpon>Cruises.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cruises.aspx.vb">
+      <DependentUpon>Cruises.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tours.aspx.designer.vb">
+      <DependentUpon>Tours.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tours.aspx.vb">
+      <DependentUpon>Tours.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BRHT.Master" />
+    <Content Include="Charters.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="VBN.aspx" />
+    <Content Include="Gift.aspx" />
+    <Content Include="Cruises.aspx" />
+    <Content Include="Tours.aspx" />
+    <Content Include="css\screen.css" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\buoe-logo.png" />
+    <Content Include="img\call-o.gif" />
+    <Content Include="img\call.gif" />
+    <Content Include="img\facebook-o.gif" />
+    <Content Include="img\facebook.gif" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\fb-o.png" />
+    <Content Include="img\fb.png" />
+    <Content Include="img\giftcert-web.gif" />
+    <Content Include="img\H1.png" />
+    <Content Include="img\help.png" />
+    <Content Include="img\i-brht-o.png" />
+    <Content Include="img\i-brht.png" />
+    <Content Include="img\i-buoe-o.png" />
+    <Content Include="img\i-buoe.png" />
+    <Content Include="img\i-cny-o.png" />
+    <Content Include="img\i-cny.png" />
+    <Content Include="img\i-cs-o.png" />
+    <Content Include="img\i-cs.png" />
+    <Content Include="img\i-ps-o.png" />
+    <Content Include="img\i-ps.png" />
+    <Content Include="img\i-qcf-o.png" />
+    <Content Include="img\i-qcf.png" />
+    <Content Include="img\i-sob-o.png" />
+    <Content Include="img\i-sob.png" />
+    <Content Include="img\ig-o.png" />
+    <Content Include="img\ig.png" />
+    <Content Include="img\nav-about-o.png" />
+    <Content Include="img\nav-about.png" />
+    <Content Include="img\nav-contact-o.png" />
+    <Content Include="img\nav-contact.png" />
+    <Content Include="img\nav-edu-o.png" />
+    <Content Include="img\nav-edu.png" />
+    <Content Include="img\nav-faq-o.png" />
+    <Content Include="img\nav-faq.png" />
+    <Content Include="img\nav-gift-o.png" />
+    <Content Include="img\nav-gift.png" />
+    <Content Include="img\nav-home-o.png" />
+    <Content Include="img\nav-home.png" />
+    <Content Include="img\nav-private-o.png" />
+    <Content Include="img\nav-private.png" />
+    <Content Include="img\nav-public-o.png" />
+    <Content Include="img\nav-public.png" />
+    <Content Include="img\pearlstreet-menu.gif" />
+    <Content Include="img\pearlstreet.jpg" />
+    <Content Include="img\pirate.png" />
+    <Content Include="img\pirateKids.png" />
+    <Content Include="img\red.png" />
+    <Content Include="img\reefrunner.gif" />
+    <Content Include="img\signature.gif" />
+    <Content Include="img\signature.png" />
+    <Content Include="img\sob-bg.jpg" />
+    <Content Include="img\SOB-CentralWharf.png" />
+    <Content Include="img\sob-line-drawing-small.gif" />
+    <Content Include="img\SOB-logo.png" />
+    <Content Include="img\spirit-of-buffalo-hilliman-family.jpg" />
+    <Content Include="img\sunSet.png" />
+    <Content Include="img\twitter-o.gif" />
+    <Content Include="img\twitter-o.png" />
+    <Content Include="img\twitter.gif" />
+    <Content Include="img\twitter.png" />
+    <Content Include="img\wine.png" />
+    <Content Include="img\youtube-o.png" />
+    <Content Include="img\youtube.png" />
+    <Content Include="img\zoom.ico" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54811</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

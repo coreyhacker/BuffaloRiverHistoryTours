@@ -1,0 +1,127 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="BRHT.master.vb" Inherits="BRHT.BRHT" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/screen.css" />
+    <meta name="description" content="Take a cruise through history and join us for a 90-minute narrated Buffalo River History Tour! Hear the story of the Erie Canal, Buffalo’s history as the largest grain port in the world and experience the nation’s largest collection of standing grain elevators from just a few feet away." />
+        <meta name="keywords" content="Buffalo, Boat, cruise, river, tour, grain elevator, malting plant, silo city, riverboat, walking tour, central wharf, erie canal, history, maritime" />
+        <meta name="robots" content="all" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53240657-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <asp:ContentPlaceHolder ID="phHEAD" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formMain" runat="server">
+    
+    <div id="All">
+        <div id="Header">
+            <a href="/"><img src="/img/BRHT-logo.png" width="250" height="192" alt="Buffalo River History Tours - Central Wharf" /></a>
+        </div><!-- Close Header -->
+        <div id="TopNav">
+            <ul id="nav">
+                <li>
+                    <a href="/"><img src="/img/nav-home.png" class="domroll /img/nav-home-o.png" width="63" height="51" alt="Home" /></a>
+                </li>
+                <li>
+                    <a href="/Tours.aspx"><img src="/img/nav-tours.png" class="domroll /img/nav-tours-o.png width="95" height="51" alt="Tours" /></a>
+                        <ul id="subTours">
+                        <li><a href="/Tours.aspx#River">&#9658; Riverboat Tours</a></li>
+                        <li><a class="lastLink" href="/Tours.aspx#Silo">&#9658; Grain Elevator Tours</a></li>                
+                    </ul>
+               </li>
+               <li>
+                    <a href="/Cruises.aspx"><img src="/img/nav-cruises.png" class="domroll /img/nav-cruises-o.png width="118" height="51" alt="Cruises" /></a></li>  
+                <li>
+                    <a href="/Charters.aspx"><img src="/img/nav-charters.png" class="domroll /img/nav-charters-o.png width="130" height="51" alt="Charters" /></a></li> 
+                <li><a href="/Gift.aspx"><img src="/img/nav-gift.png" class="domroll /img/nav-gift-o.png width="125" height="51" alt="Gift Certificates" /></a></li>
+                <li><a href="/Contact.aspx"><img src="/img/nav-contact.png" class="domroll /img/nav-contact-o.png width="99" height="51" alt="Contact Us" /></a></li>
+            </ul>
+        </div><!-- Close TopNav -->                
+        <div id="Main">
+            <div id="Content">
+               <asp:ContentPlaceHolder ID="phMAIN" runat="server">
+    
+               </asp:ContentPlaceHolder>
+            </div><!-- Close Content -->
+            <div id="SideBar">
+               
+                <center>
+                    <p style="text-align:center; margin:5 0 0 0;">
+                        <div id="TA_selfserveprop165" class="TA_selfserveprop">
+                        <ul id="0muwJNF" class="TA_links WrGO7P">
+                        <li id="iwii6ZauMr" class="lXIq569T8LZJ">
+                        <a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                        </li>
+                        </ul>
+                        </div>
+                        <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=165&amp;locationId=4463174&amp;lang=en_US&amp;rating=true&amp;nreviews=2&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true"></script>
+
+                        <br />
+                        
+                        <div id="TA_cdswritereviewlg354" class="TA_cdswritereviewlg">
+                        <ul id="jCyzmDA" class="TA_links aoYPtz">
+                        <li id="SguMvX" class="bxRpr4">
+                        <a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/medium-logo-12097-2.png" alt="TripAdvisor"/></a>
+                        </li>
+                        </ul>
+                        </div>
+                        <script src="http://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=354&amp;locationId=4463174&amp;lang=en_US&amp;border=true"></script>
+
+                    </p>
+                </center>
+            </div><!-- Close SideBar -->
+            
+            <div id="BottomNav"> 
+                <ul id="footHome">
+                    <li><a href="/About.aspx" class="yellow">Home</a></li>
+                    <li><a href="/Tours.aspx" class="yellow">Daily Tours</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;<a href="/Tours.aspx#River">Riverboat Tours</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;<a href="/Tours.aspx#Silo">Grain Elevator Tours</a></li>       
+                    <li><a href="/Cruises.aspx" class="yellow">Public Cruises</a></li>
+                    <li><a href="/Charters.aspx" class="yellow">Private Charters</a></li>
+                    <li><a href="/Gift.aspx" class="yellow">Gift Certificates</a></li>
+                </ul>
+                <ul id="footContact">
+                    <li><a href="/Contact.asxp" class="yellow">Contact Us</a></li>
+                    <li class="address"><strong>Buffalo River History Tours</strong><br />Central Wharf at Canalside<br /><br />1 Naval Park Cove<br />Buffalo, New York 14202<br /><br />
+                    <span class="yellow">716.796.4556</span><br />info@queencityferry.com</li>
+                </ul>
+                 <ul id="footSocial">       
+                    <li><a href="https://www.facebook.com/BuffaloRiverHistoryTours" target="_fb"><img src="/img/facebook.png" width="198" height="53" alt="facebook" class="domroll /img/facebook-o.png" /></a>
+                    <!--<a href="http://twitter.com/spiritofbuffalo" target="_t"><img src="/img/twitter.png" width="50" height="53" alt="Twitter" class="domroll /img/twitter-o.png" /></a>
+                    <a href="http://instagram.com/spiritofbuffalo" target="_ig"><img src="/img/ig.png" width="50" height="53" alt="Instagram" class="domroll /img/ig-o.png" /></a>-->
+                    </li>
+                </ul>
+            </div>
+            <div id="Footer">
+                <a href="http://www.spiritofbuffalo.com"><img src="/img/i-sob-o.png" class="domroll /img/i-sob.png" width="100" height="60" alt="Spirit of Buffalo" /></a>
+                <a href="http://www.buffaloriverhistorytours.com" class="_brht"><img src="/img/i-brht-o.png" class="domroll /img/i-brht.png" width="100" height="60" alt="Buffalo River History Tours" /></a>
+                <a href="http://www.queencityferry.com" target="_qcf"><img src="/img/i-qcf-o.png" class="domroll /img/i-qcf.png" width="100" height="60" alt="Queen City Ferry Company" /></a>
+                 <a href="http://www.cruisenewyork.com" target="_cny"><img src="/img/i-cny-o.png" class="domroll /img/i-cny.png" width="100" height="60" alt="Cruise New York - Tour Boat Association" /></a>
+                <a href="http://www.canalsidebuffalo.com/" target="_ech"><img src="/img/i-cs-o.png" class="domroll /img/i-cs.png" width="100" height="60" alt="Erie Canal Harbor Development Corporation - Canalside" /></a>
+                <a href="http://www.PearlStreetGrill.com" target="_ps"><img src="/img/i-ps-o.png" class="domroll /img/i-ps.png" width="100" height="60" alt="Pearl Street Grill & Brewery" /></a>
+            </div><!-- Close Footer -->
+
+        </div><!-- Close Main -->
+    </div><!-- Close All -->
+	
+    <script type ="text/javascript"  src="/js/domroll.js"></script> 
+    </form>
+</body>
+</html>
+
+
+
